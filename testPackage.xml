@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="test testPackage">
+    <classes>
+      <!--class name="com.test.HMW"/>  -->
+      <!-- class name="com.test.AddEmployeeTest"/> -->
+      <class name="com.test.LoginTest"> <!-- I want to test all methods of com.test.LoginTest -->
+      <methods> <!-- I want to exclude this specific method/Test Case -->
+      <exclude name="invalidPasswordLogin"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!-- test name="test class02">
+    <packages>
+    <package name="com.class02"></package>
+    </packages>
+    </test> --> <!-- Test -->
+</suite>
+
+<!-- 
+Create a class01.xmlfile which will execute all test methods of 3 classes from com.class01 package
+1.DifferentAnnotations
+2.TaskTwo
+3.TestNGDemo
+ -->
+ <suite>
+ <test name="test class01package methods">
+ <classes>
+ 
+ </classes>
+ </test>
+ </suite>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
